@@ -13,7 +13,7 @@ questionsDisplay.addEventListener("click", function(e) {
       answer.classList.add("show");
       answer.classList.remove("hidden");
 
-      if (e.target.textContent === questions[0].answer) {
+      if (e.target.textContent === questions[questionTracker].answer) {
         answer.textContent = "Correct";
       } else {
         answer.textContent = "Wrong";
